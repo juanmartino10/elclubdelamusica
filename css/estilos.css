@@ -9,7 +9,7 @@
 #grid_container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 80px;
+    grid-template-rows: 100px 600px 80px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -159,6 +159,19 @@ p {
     width: 60px;
     font-size: 1rem;
     margin-top: 40px;
+}
+
+.miCuenta {
+    height: 300px;
+    font-size: 4rem;
+    margin: 40px;
+    margin-bottom: 100px;
+}
+
+.botonIngresar {
+margin: 20px;
+margin-left: 120px;
+padding: 10px;
 }
 
 /* IFRAME */
