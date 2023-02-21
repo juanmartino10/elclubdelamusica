@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #ced8e0; font-size: 11rem;">
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/notamusical.png" alt="logo club" width="80" height="80">
@@ -33,17 +33,16 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./buscarmusico.html">Buscar músico</a>
+                            <a class="nav-link" href="../pages/buscarmusico.html">Buscar músico</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./buscarbanda.html">Buscar banda</a>
+                            <a class="nav-link" href="../pages/buscarbanda.html">Buscar banda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
-                        </li>
+                            <a class="nav-link" href="../pages/sobrenosotros.html">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./micuenta.html">Mi cuenta</a>
+                            <a class="nav-link" href="../pages/micuenta.html">Mi cuenta</a>
                         </li>
                     </ul>
                 </div>
@@ -51,81 +50,95 @@
         </nav>
     </header>
     <!-- buscador -->
-    <div id="grid_container">
-        <main>
-            <h1>BUSCAR MUSICO</h1>
-            <p>Aqui comienza tu busqueda, mas de 1000 musicos estan esperando por ti, encuentra tu mejor opcion!
-            </p>
-            <div>
-                <article>
-                    <section class="buscadorMusicos">
-                        Por nombre <input type="text" name="text" placeholder="Nombre">
-                        <input type="submit" value="Buscar">
-                        Por instrumento <input type="text" name="text" placeholder="Instrumento">
-                        <input type="submit" value="Buscar">
-                    </section>
-                </article>
+    <main>
+        <div class="row">
+            <div class="col-sm">
+                <h1>BUSCAR MUSICO</h1>
+                <p>Aqui comienza tu busqueda, mas de 1000 musicos estan esperando por ti, encuentra tu mejor opcion!
+                </p>
+                <div>
+                    <article>
+                        <section class="buscadorMusicos">
+                            Por nombre <input type="text" name="text" placeholder="Nombre">
+                            <input type="submit" value="Buscar">
+                            Por instrumento <input type="text" name="text" placeholder="Instrumento">
+                            <input type="submit" value="Buscar">
+                        </section>
+                    </article>
+                </div>
             </div>
             <!-- perfiles recomendados -->
             <h2>DESTACADOS</h2>
-            <article>
-                <section>
-                    <a href="perfilale.html" target="_blank"><img class="imagenperfil" src="../img/fotoale.png"
-                            alt="Alejandro Musante"></a>
-                    <p class="nombres">Ale Musante</p>
-                    <p class="instrumento">Guitarrista</p>
-                    <ul class="redes">
-                        <li><a href="https://instagram.com/alemusante" target="_blank"><img class="imgredes"
-                                    src="../img/logoig.png" alt="logo ig"></a></li>
-                        <li><a href="https://twitter.com/alemusante" target="_blank"><img class="imgredes"
-                                    src="../img/logotw.png" alt="logo tw"></a></li>
-                        <li><a href="https://youtube.com/alemusante" target="_blank"><img class="imgredes"
-                                    src="../img/logoyt.png" alt="logo yt"></a></li>
-                    </ul>
-                    <br>
-                    <div class="contactar">
-                        <a href="perfilale.html" target="_blank">Contactar</a>
-                    </div>
-                </section>
-                <section class="perfilnegra">
-                    <a href="paginanegra.html" target="_blank"><img class="imagenperfil" src="../img/fotonegra.png"
-                            alt="Agustina Morales"></a>
-                    <p class="nombres">Agus Morales</p>
-                    <p class="instrumento">Cantante</p>
-                    <ul class="redes">
-                        <li><a href="https://instagram.com/agusmor" target="_blank"><img class="imgredes"
-                                    src="../img/logoig.png" alt="logo ig"></a></li>
-                        <li><a href="https://twitter.com/agusmor" target="_blank"><img class="imgredes"
-                                    src="../img/logotw.png" alt="logo tw"></a></li>
-                        <li><a href="https://youtube.com/agusmor" target="_blank"><img class="imgredes"
-                                    src="../img/logoyt.png" alt="logo yt"></a></li>
-                    </ul>
-                    <br>
-                    <div class="contactar">
-                        <a href="perfilnegra.html" target="_blank">Contactar</a>
-                    </div>
-                </section>
-            </article>
-        </main>
-        <!-- footer -->
-        <footer>
-            <div>
-                <ul class="estilofooter">
-                    <li class="copyfooter">2023 El club de la musica SA. Todos los derechos reservados</li>
-                    <li><a href="./pages/terminos.html">Terminos y condiciones</a>
-                        <br>
-                        <a href="./pages/ayuda.html">Ayuda</a>
-                    </li>
-                    <li><a href="https://instagram.com/clubdelamusica" target="_blank"><img class="imgfooter"
-                                src="../img/logoig.png" alt="logo ig"></a>
-                        <a href="https://twitter.com/clubdelamusica" target="_blank"><img class="imgfooter"
-                                src="../img/logotw.png" alt="logo tw"></a>
-                        <a href="https://youtube.com/clubdelamusica" target="_blank"><img class="imgfooter"
-                                src="../img/logoyt.png" alt="logo yt"></a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-sm">
+                    <article>
+                        <section>
+                            <a href="perfilale.html" target="_blank"><img class="imagenperfil" src="../img/fotoale.png"
+                                    alt="Alejandro Musante"></a>
+                            <p class="nombres">Ale Musante</p>
+                            <p class="instrumento">Guitarrista</p>
+                            <ul class="redes">
+                                <li><a href="https://instagram.com/alemusante" target="_blank"><img class="imgredes"
+                                            src="../img/logoig.png" alt="logo ig"></a></li>
+                                <li><a href="https://twitter.com/alemusante" target="_blank"><img class="imgredes"
+                                            src="../img/logotw.png" alt="logo tw"></a></li>
+                                <li><a href="https://youtube.com/alemusante" target="_blank"><img class="imgredes"
+                                            src="../img/logoyt.png" alt="logo yt"></a></li>
+                            </ul>
+                            <br>
+                            <div class="contactar">
+                                <a href="perfilale.html" target="_blank">Contactar</a>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-sm">
+                    <article>
+                        <section class="perfilnegra">
+                            <a href="paginanegra.html" target="_blank"><img class="imagenperfil"
+                                    src="../img/fotonegra.png" alt="Agustina Morales"></a>
+                            <p class="nombres">Agus Morales</p>
+                            <p class="instrumento">Cantante</p>
+                            <ul class="redes">
+                                <li><a href="https://instagram.com/agusmor" target="_blank"><img class="imgredes"
+                                            src="../img/logoig.png" alt="logo ig"></a></li>
+                                <li><a href="https://twitter.com/agusmor" target="_blank"><img class="imgredes"
+                                            src="../img/logotw.png" alt="logo tw"></a></li>
+                                <li><a href="https://youtube.com/agusmor" target="_blank"><img class="imgredes"
+                                            src="../img/logoyt.png" alt="logo yt"></a></li>
+                            </ul>
+                            <br>
+                            <div class="contactar">
+                                <a href="perfilnegra.html" target="_blank">Contactar</a>
+                            </div>
+                        </section>
+                    </article>
+                </div>
             </div>
-        </footer>
+        </div>
+    </main>
+    <!-- footer -->
+    <div class="row">
+        <div class="col-sm">
+            <footer>
+                <div>
+                    <ul class="estilofooter">
+                        <li class="copyfooter">2023 El club de la musica SA. Todos los derechos reservados</li>
+                        <li><a href="./pages/terminos.html">Terminos y condiciones</a>
+                            <br>
+                            <a href="./pages/ayuda.html">Ayuda</a>
+                        </li>
+                        <li><a href="https://instagram.com/clubdelamusica" target="_blank"><img class="imgfooter"
+                                    src="../img/logoig.png" alt="logo ig"></a>
+                            <a href="https://twitter.com/clubdelamusica" target="_blank"><img class="imgfooter"
+                                    src="../img/logotw.png" alt="logo tw"></a>
+                            <a href="https://youtube.com/clubdelamusica" target="_blank"><img class="imgfooter"
+                                    src="../img/logoyt.png" alt="logo yt"></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 

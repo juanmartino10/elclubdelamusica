@@ -28,7 +28,7 @@ header {
 
 nav {
     background-color: #ced8e0;
-    font-size: 7rem;
+    font-size: 11rem;
     padding-top: 20px;
     display: flex;
 }
@@ -36,7 +36,7 @@ nav {
 nav ul li a {
     display: flex;
     justify-content: space-around;
-    margin-left: 150px;
+    
 }
 
 .navul {
@@ -81,6 +81,7 @@ article {
     grid-area: article;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 section {
@@ -190,7 +191,7 @@ padding: 10px;
 footer {
     grid-area: footer;
     background-color: #ced8e0;
-    height: 80px;
+    height: 200px;
 }
 
 
