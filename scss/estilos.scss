@@ -20,6 +20,7 @@ nav {
     font-size: 11rem;
     padding-top: 20px;
     display: flex;
+
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -27,6 +28,7 @@ nav {
         list-style-type: none;
         text-align: center;
     }
+
     nav ul li {
         display: flex;
         justify-content: space-around;
@@ -202,6 +204,11 @@ footer {
         grid-template-areas: "article" "footer";
     }
 
+    .logoprincipal {
+        height: 35px;
+        width: 35px;
+    }
+
     nav {
         display: none;
     }
@@ -225,11 +232,6 @@ footer {
         font-size: 2rem;
         display: flex;
         margin-top: 40px;
-    }
-
-    .logoprincipal {
-        height: 35px;
-        width: 35px;
     }
 
     .imgfooter {

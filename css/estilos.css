@@ -16,22 +16,11 @@
 }
 
 nav {
+  display: flex;
+  justify-content: center;
   background-color: #ced8e0;
   font-size: 11rem;
-  padding-top: 20px;
-  display: flex;
-}
-nav nav ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  list-style-type: none;
-  text-align: center;
-}
-nav nav ul li {
-  display: flex;
-  justify-content: space-around;
-  display: inline;
+  padding-top: 20%;
 }
 
 nav button {
@@ -39,10 +28,21 @@ nav button {
   justify-content: end;
 }
 
+nav ul {
+  flex-direction: row;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  justify-content: space-around;
+  display: inline-block;
+}
+
 .logoprincipal {
   height: 100px;
   width: 100px;
-  padding-top: 30px;
+  margin-top: 50px;
 }
 
 /* TITULO */
@@ -59,7 +59,6 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin: 20px;
 }
 
 /* ARTICLE */
@@ -140,11 +139,35 @@ p {
   padding: 10px;
 }
 
-.botonVerMas {
-  height: 20px;
-  width: 60px;
-  font-size: 1rem;
-  margin-top: 40px;
+.button-62 {
+  background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+  border: 0;
+  border-radius: 12px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem  #ced8e0, .125rem .125rem 1rem  #ced8e0;
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem  #ced8e0, .125rem .125rem 1rem  #ced8e0;
 }
 
 .miCuenta {
@@ -199,35 +222,45 @@ footer {
     grid-template-rows: 600px 100px;
     grid-template-areas: "article" "footer";
   }
+
   nav {
     display: none;
   }
+
   h1 {
     font-size: 2rem;
   }
+
   .buscadorMusicos {
     width: 300px;
     font-size: 5px;
     height: 4px;
     margin-left: 25px;
   }
+
   footer {
     height: 200px;
   }
+
   .estilofooter {
     font-size: 2rem;
     display: flex;
     margin-top: 40px;
   }
+
   .logoprincipal {
     height: 35px;
     width: 35px;
   }
+
   .imgfooter {
     height: 20px;
     width: 20px;
   }
+
   .copyfooter {
     display: none;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
