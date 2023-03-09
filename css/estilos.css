@@ -15,34 +15,35 @@
   grid-template-areas: "nav" "article" "footer";
 }
 
+/* NAV */
 nav {
-  display: flex;
-  justify-content: center;
   background-color: #ced8e0;
   font-size: 11rem;
-  padding-top: 20%;
-}
-
-nav button {
+  padding-top: 20px;
   display: flex;
-  justify-content: end;
 }
 
-nav ul {
+nav ul li a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navul {
+  display: flex;
+  justify-content: space-around;
   flex-direction: row;
   list-style-type: none;
   text-align: center;
 }
 
-nav ul li {
-  justify-content: space-around;
-  display: inline-block;
+.navul li {
+  display: inline;
 }
 
 .logoprincipal {
   height: 100px;
   width: 100px;
-  margin-top: 50px;
+  padding-top: 30px;
 }
 
 /* TITULO */
@@ -59,6 +60,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  margin: 20px;
 }
 
 /* ARTICLE */
@@ -75,9 +77,31 @@ section {
   padding: 20px;
 }
 
-.buscadorMusicos {
-  width: 500px;
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  background-color: #ced8e0;
+  height: 200px;
+}
+
+.imgfooter {
+  height: 30px;
+  width: 30px;
+}
+
+.estilofooter {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-top: 15px;
 }
 
 .nombres {
@@ -91,12 +115,11 @@ section {
   width: 110px;
   margin-left: 90px;
   margin-top: 5px;
+  border: solid 1px #788896;
 }
 
-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.buscadorMusicos {
+  width: 500px;
   font-size: 1rem;
 }
 
@@ -139,7 +162,7 @@ p {
   padding: 10px;
 }
 
-.button-62 {
+.botonVerMas {
   background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
   border: 0;
   border-radius: 12px;
@@ -154,37 +177,19 @@ p {
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-
 }
 
-.button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem  #ced8e0, .125rem .125rem 1rem  #ced8e0;
+.botonVerMas:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
 }
 
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem  #ced8e0, .125rem .125rem 1rem  #ced8e0;
-}
-
-.miCuenta {
-  height: 350px;
-  font-size: 4rem;
-  margin: 40px;
-  margin-bottom: 100px;
-}
-
-.botonIngresar {
-  margin: 20px;
-  margin-left: 120px;
-}
-
-.historia {
-  font-size: 2rem;
-  width: 900px;
+.botonVerMas:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
 }
 
 /* IFRAME */
@@ -192,28 +197,26 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  width: 80%;
+  height: 50%;
+  width: 50%;
 }
 
-/* FOOTER */
-footer {
-  grid-area: footer;
-  background-color: #ced8e0;
-  height: 200px;
+.historia {
+  font-size: 2rem;
+  width: 900px;
 }
 
-.imgfooter {
-  height: 30px;
-  width: 30px;
-}
-
-.estilofooter {
-  display: flex;
+.miCuenta {
+  height: 300px;
   font-size: 3rem;
-  justify-content: space-around;
-  list-style-type: none;
-  padding-top: 15px;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+.botonIngresar {
+  margin: 20px;
+  margin-left: 120px;
+  padding: 1px;
 }
 
 @media screen and (max-width: 400px) {
@@ -222,11 +225,9 @@ footer {
     grid-template-rows: 600px 100px;
     grid-template-areas: "article" "footer";
   }
-
   nav {
     display: none;
   }
-
   h1 {
     font-size: 2rem;
   }
@@ -241,23 +242,19 @@ footer {
   footer {
     height: 200px;
   }
-
   .estilofooter {
     font-size: 2rem;
     display: flex;
     margin-top: 40px;
   }
-
   .logoprincipal {
     height: 35px;
     width: 35px;
   }
-
   .imgfooter {
     height: 20px;
     width: 20px;
   }
-
   .copyfooter {
     display: none;
   }

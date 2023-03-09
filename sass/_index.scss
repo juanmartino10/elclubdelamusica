@@ -1,0 +1,88 @@
+.nombres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: white;
+    height: 3px;
+    width: 110px;
+    margin-left: 90px;
+    margin-top: 5px;
+    border: solid 1px #788896;
+}
+
+.buscadorMusicos {
+    width: 500px;
+    font-size: 1rem;
+}
+
+.instrumento {
+    margin: 4px;
+    margin-right: 15px;
+}
+
+.contactar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.imagenperfil {
+    height: 200px;
+    width: 300px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.imgredes {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.divBotonVerMas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.botonVerMas {
+    background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+    border: 0;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+
+}
+
+.botonVerMas:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #ced8e0, .125rem .125rem 1rem #ced8e0;
+}
+
+.botonVerMas:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #ced8e0, .125rem .125rem 1rem #ced8e0;
+}
