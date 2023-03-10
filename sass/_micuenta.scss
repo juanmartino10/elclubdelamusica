@@ -6,7 +6,14 @@
 }
 
 .botonIngresar {
-    margin: 20px;
+    margin: 10px;
     margin-left: 120px;
     padding: 1px;
+}
+
+.herramientasLogin {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 20px;
 }
