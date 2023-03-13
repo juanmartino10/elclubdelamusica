@@ -25,13 +25,17 @@
 nav {
     background-color: #ced8e0;
     font-size: variables.$font_nav;
-    padding-top: 20px;
+    padding-top: variables.$padding_nav;
     display: flex;
+}
 
-    nav ul li a {
-        display: flex;
-        justify-content: space-around;
-    }
+.nav-item {
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.nav-item:hover {
+    transform: scale(1.2);
 }
 
 .logoprincipal {
@@ -47,7 +51,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    margin: 20px;
+    margin: variables.$espacios_titulos;
 }
 
 h2 {
@@ -55,21 +59,27 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    margin: 20px;
+    margin: variables.$espacios_titulos;
 }
 
 /* ARTICLE */
+
+main {
+    background-image: url(../img/wave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 article {
     grid-area: article;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: variables.$espacios_articles;
 
     section {
         background-color: #ced8e0;
         border: solid 2px #788896;
-        padding: 20px;
+        padding: variables.$espacios_articles;
     }
 
     p {
@@ -88,10 +98,22 @@ footer {
     height: 200px;
 }
 
-
 .imgfooter {
-    height: 30px;
-    width: 30px;
+    height: variables.$tamano_footer;
+    width: variables.$tamano_footer;
+    transition: all 0.5s;
+}
+
+.imgfooter:hover {
+    transform: scale(1.2);
+}
+
+.linkFooter {
+    transition: all 0.5s;
+}
+
+.linkFooter:hover {
+    transform: scale(1.2);
 }
 
 .estilofooter {
@@ -102,7 +124,22 @@ footer {
     padding-top: 15px;
 }
 
-@media screen and (max-width: 400px) {
+div.row {
+    padding: 0%;
+    margin: 0%;
+}
+
+div.col-sm {
+    padding: 0%;
+    margin: 0%;
+}
+
+div.col {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (max-width: 900px) {
 
     #grid_container {
         grid-template-columns: 1fr;
@@ -132,19 +169,19 @@ footer {
     }
 
     .estilofooter {
-        font-size: 2rem;
+        font-size: 4rem;
         display: flex;
         margin-top: 40px;
     }
 
     .logoprincipal {
-        height: 35px;
-        width: 35px;
+        height: variables.$logo_media;
+        width: variables.$logo_media;
     }
 
     .imgfooter {
-        height: 20px;
-        width: 20px;
+        height: variables.$redes_footer;
+        width: variables.$redes_footer;
     }
 
     .copyfooter {

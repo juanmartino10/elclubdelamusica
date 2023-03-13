@@ -52,10 +52,10 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  margin: 20px;
 }
 
 /* ARTICLE */
-
 main {
   background-image: url(../img/wave.png);
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ footer {
 }
 
 .linkFooter:hover {
-  transform: scale(1.2) ;
+  transform: scale(1.2);
 }
 
 .estilofooter {
@@ -113,6 +113,21 @@ footer {
   justify-content: space-around;
   list-style-type: none;
   padding-top: 15px;
+}
+
+div.row {
+  padding: 0%;
+  margin: 0%;
+}
+
+div.col-sm {
+  padding: 0%;
+  margin: 0%;
+}
+
+div.col {
+  padding: 0%;
+  margin: 0%;
 }
 
 .nombres {
@@ -164,7 +179,6 @@ footer {
   margin-right: 50px;
 }
 
-
 .imgredes {
   height: 30px;
   width: 30px;
@@ -180,8 +194,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding: 10px;
+  margin-top: 15px;
 }
 
 .botonVerMas {
@@ -206,35 +221,55 @@ footer {
 }
 
 .botonVerMas:not([disabled]):focus {
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
 }
 
 .botonVerMas:not([disabled]):hover {
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
 }
 
-div.row {
-  padding: 0%;
-  margin: 0%;
-}
+@media screen and (max-width: 1007px) {
+  .botonVerMas {
+    background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+    border: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
 
-div.col-sm {
-  padding: 0%;
-  margin: 0%;
-}
+  .botonVerMas:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+  }
 
-div.col {
-  padding: 0%;
-  margin: 0%;
+  .botonVerMas:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+  }
 }
 
 /* IFRAME */
+article.iframeArticle {
+  margin-bottom: 0px;
+}
+
 .iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 40%;
 }
 
 .historia {
@@ -302,7 +337,6 @@ article.miCuenta {
   transform: scale(1.2);
 }
 
-
 @media screen and (max-width: 900px) {
   #grid_container {
     grid-template-columns: 1fr;
@@ -347,37 +381,6 @@ article.miCuenta {
 
   .copyfooter {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .botonVerMas {
-    background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
-    border: 0;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    padding: 0 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow 0.2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-  }
-
-  .botonVerMas:not([disabled]):focus {
-    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
-  }
-
-  .botonVerMas:not([disabled]):hover {
-    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
   }
 }
 
