@@ -60,6 +60,8 @@ main {
   background-image: url(../img/wave.png);
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 article {
@@ -68,13 +70,11 @@ article {
   justify-content: space-around;
   margin-bottom: 20px;
 }
-
 article section {
   background-color: #ced8e0;
   border: solid 2px #788896;
   padding: 20px;
 }
-
 article p {
   display: flex;
   align-items: center;
@@ -249,16 +249,13 @@ div.col {
     touch-action: manipulation;
     white-space: nowrap;
   }
-
   .botonVerMas:not([disabled]):focus {
     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
   }
-
   .botonVerMas:not([disabled]):hover {
     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
   }
 }
-
 /* IFRAME */
 article.iframeArticle {
   margin-bottom: 0px;
@@ -268,8 +265,9 @@ article.iframeArticle {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40%;
-  width: 40%;
+  height: 80%;
+  width: 80%;
+  margin-bottom: 0;
 }
 
 .historia {
@@ -282,7 +280,7 @@ article.miCuenta {
 }
 
 .miCuenta {
-  height: 300px;
+  height: 400px;
   font-size: 3rem;
   margin: 40px;
   margin-bottom: 100px;
@@ -343,44 +341,36 @@ article.miCuenta {
     grid-template-rows: 600px 100px;
     grid-template-areas: "article" "footer";
   }
-
   nav {
     display: none;
   }
-
   h1 {
     font-size: 2rem;
   }
-
-  .buscadorMusicos {
-    width: 300px;
-    font-size: 5px;
-    height: 4px;
-    margin-left: 25px;
-  }
-
   footer {
     height: 200px;
   }
-
   .estilofooter {
     font-size: 4rem;
     display: flex;
     margin-top: 40px;
   }
-
   .logoprincipal {
     height: 35px;
     width: 35px;
   }
-
   .imgfooter {
     height: 20px;
     width: 20px;
   }
-
   .copyfooter {
     display: none;
+  }
+  .buscadorMusicos {
+    width: 300px;
+    font-size: 5px;
+    height: 4px;
+    margin-left: 25px;
   }
 }
 

@@ -68,6 +68,8 @@ main {
     background-image: url(../img/wave.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 article {
@@ -157,13 +159,6 @@ div.col {
         font-size: 2rem;
     }
 
-    .buscadorMusicos {
-        width: 300px;
-        font-size: 5px;
-        height: 4px;
-        margin-left: 25px;
-    }
-
     footer {
         height: 200px;
     }
@@ -187,4 +182,12 @@ div.col {
     .copyfooter {
         display: none;
     }
+
+    .buscadorMusicos {
+        width: 300px;
+        font-size: 5px;
+        height: 4px;
+        margin-left: 25px;
+    }
+
 }
