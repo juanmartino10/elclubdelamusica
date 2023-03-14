@@ -23,21 +23,13 @@ nav {
   display: flex;
 }
 
-nav ul li a {
-  display: flex;
-  justify-content: space-around;
+.nav-item {
+  margin-right: 10px;
+  transition: all 0.5s;
 }
 
-.navul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  list-style-type: none;
-  text-align: center;
-}
-
-.navul li {
-  display: inline;
+.nav-item:hover {
+  transform: scale(1.2);
 }
 
 .logoprincipal {
@@ -60,24 +52,29 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin: 20px;
 }
 
 /* ARTICLE */
+main {
+  background-image: url(../img/wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
 article {
   grid-area: article;
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
-
-section {
+article section {
   background-color: #ced8e0;
   border: solid 2px #788896;
   padding: 20px;
 }
-
-p {
+article p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +91,19 @@ footer {
 .imgfooter {
   height: 30px;
   width: 30px;
+  transition: all 0.5s;
+}
+
+.imgfooter:hover {
+  transform: scale(1.2);
+}
+
+.linkFooter {
+  transition: all 0.5s;
+}
+
+.linkFooter:hover {
+  transform: scale(1.2);
 }
 
 .estilofooter {
@@ -104,44 +114,22 @@ footer {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 400px) {
-  #grid_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 600px 100px;
-    grid-template-areas: "article" "footer";
-  }
-  nav {
-    display: none;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  .buscadorMusicos {
-    width: 300px;
-    font-size: 5px;
-    height: 4px;
-    margin-left: 25px;
-  }
-  footer {
-    height: 200px;
-  }
-  .estilofooter {
-    font-size: 2rem;
-    display: flex;
-    margin-top: 40px;
-  }
-  .logoprincipal {
-    height: 35px;
-    width: 35px;
-  }
-  .imgfooter {
-    height: 20px;
-    width: 20px;
-  }
-  .copyfooter {
-    display: none;
-  }
+div.row {
+  padding: 0%;
+  margin: 0%;
+  padding-right: 0;
 }
+
+div.col-sm {
+  padding: 0%;
+  margin: 0%;
+}
+
+div.col {
+  padding: 0%;
+  margin: 0%;
+}
+
 .nombres {
   display: flex;
   justify-content: center;
@@ -171,6 +159,11 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  transition: all 0.5s;
+}
+
+.contactar:hover {
+  transform: scale(1.2);
 }
 
 .imagenperfil {
@@ -190,20 +183,25 @@ footer {
   height: 30px;
   width: 30px;
   margin-left: 10px;
+  transition: all 0.5s;
+}
+
+.imgredes:hover {
+  transform: scale(1.2);
 }
 
 .divBotonVerMas {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 10px;
+  margin-top: 15px;
 }
 
 .botonVerMas {
-  background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+  background: linear-gradient(to bottom right, white, white);
   border: 0;
-  border-radius: 12px;
   color: black;
   cursor: pointer;
   display: inline-block;
@@ -230,13 +228,46 @@ footer {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
 }
 
+@media screen and (max-width: 1007px) {
+  .botonVerMas {
+    background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+    border: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  .botonVerMas:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+  }
+  .botonVerMas:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+  }
+}
 /* IFRAME */
+article.iframeArticle {
+  margin-bottom: 0px;
+}
+
 .iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50%;
-  width: 50%;
+  height: 80%;
+  width: 80%;
+  margin-bottom: 0;
 }
 
 .historia {
@@ -244,17 +275,103 @@ footer {
   width: 900px;
 }
 
+article.miCuenta {
+  height: 400px;
+}
+
 .miCuenta {
-  height: 300px;
+  height: 400px;
   font-size: 3rem;
   margin: 40px;
   margin-bottom: 100px;
 }
 
 .botonIngresar {
-  margin: 20px;
-  margin-left: 120px;
-  padding: 1px;
+  background: linear-gradient(to bottom right, white, white);
+  border: 0;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-left: 110px;
+}
+
+.botonIngresar:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+}
+
+.botonIngresar:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+}
+
+.herramientasLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.herramientasLoginLista {
+  list-style: none;
+  font-size: 3rem;
+  transition: all 0.5s;
+}
+
+.herramientasLoginLista:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  #grid_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 100px;
+    grid-template-areas: "article" "footer";
+  }
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  footer {
+    height: 200px;
+  }
+  .estilofooter {
+    font-size: 4rem;
+    display: flex;
+    margin-top: 40px;
+  }
+  .logoprincipal {
+    height: 35px;
+    width: 35px;
+  }
+  .imgfooter {
+    height: 20px;
+    width: 20px;
+  }
+  .copyfooter {
+    display: none;
+  }
+  .buscadorMusicos {
+    width: 300px;
+    font-size: 5px;
+    height: 4px;
+    margin-left: 25px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

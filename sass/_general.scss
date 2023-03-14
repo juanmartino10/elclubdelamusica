@@ -1,3 +1,5 @@
+@use '_variables.scss';
+
 * {
     margin: 0%;
     padding: 0%;
@@ -22,33 +24,24 @@
 
 nav {
     background-color: #ced8e0;
-    font-size: 11rem;
-    padding-top: 20px;
+    font-size: variables.$font_nav;
+    padding-top: variables.$padding_nav;
     display: flex;
 }
 
-nav ul li a {
-    display: flex;
-    justify-content: space-around;
-
+.nav-item {
+    margin-right: 10px;
+    transition: all 0.5s;
 }
 
-.navul {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    list-style-type: none;
-    text-align: center;
-}
-
-.navul li {
-    display: inline;
+.nav-item:hover {
+    transform: scale(1.2);
 }
 
 .logoprincipal {
-    height: 100px;
-    width: 100px;
-    padding-top: 30px;
+    height: variables.$height;
+    width: variables.$weight;
+    padding-top: variables.$padding_logo;
 }
 
 /* TITULO */
@@ -58,7 +51,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    margin: 20px;
+    margin: variables.$espacios_titulos;
 }
 
 h2 {
@@ -66,30 +59,38 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    margin: 20px;
 }
 
 /* ARTICLE */
+
+main {
+    background-image: url(../img/wave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
 
 article {
     grid-area: article;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: variables.$espacios_articles;
+
+    section {
+        background-color: #ced8e0;
+        border: solid 2px #788896;
+        padding: variables.$espacios_articles;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
 }
 
-section {
-    background-color: #ced8e0;
-    border: solid 2px #788896;
-    padding: 20px;
-}
-
-p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-}
 
 /* FOOTER */
 footer {
@@ -98,10 +99,22 @@ footer {
     height: 200px;
 }
 
-
 .imgfooter {
-    height: 30px;
-    width: 30px;
+    height: variables.$tamano_footer;
+    width: variables.$tamano_footer;
+    transition: all 0.5s;
+}
+
+.imgfooter:hover {
+    transform: scale(1.2);
+}
+
+.linkFooter {
+    transition: all 0.5s;
+}
+
+.linkFooter:hover {
+    transform: scale(1.2);
 }
 
 .estilofooter {
@@ -112,7 +125,23 @@ footer {
     padding-top: 15px;
 }
 
-@media screen and (max-width: 400px) {
+div.row {
+    padding: 0%;
+    margin: 0%;
+    padding-right: 0;
+}
+
+div.col-sm {
+    padding: 0%;
+    margin: 0%;
+}
+
+div.col {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (max-width: 900px) {
 
     #grid_container {
         grid-template-columns: 1fr;
@@ -130,6 +159,30 @@ footer {
         font-size: 2rem;
     }
 
+    footer {
+        height: 200px;
+    }
+
+    .estilofooter {
+        font-size: 4rem;
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .logoprincipal {
+        height: variables.$logo_media;
+        width: variables.$logo_media;
+    }
+
+    .imgfooter {
+        height: variables.$redes_footer;
+        width: variables.$redes_footer;
+    }
+
+    .copyfooter {
+        display: none;
+    }
+
     .buscadorMusicos {
         width: 300px;
         font-size: 5px;
@@ -137,27 +190,4 @@ footer {
         margin-left: 25px;
     }
 
-    footer {
-        height: 200px;
-    }
-
-    .estilofooter {
-        font-size: 2rem;
-        display: flex;
-        margin-top: 40px;
-    }
-
-    .logoprincipal {
-        height: 35px;
-        width: 35px;
-    }
-
-    .imgfooter {
-        height: 20px;
-        width: 20px;
-    }
-
-    .copyfooter {
-        display: none;
-    }
 }

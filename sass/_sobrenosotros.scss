@@ -1,10 +1,15 @@
 /* IFRAME */
+article.iframeArticle {
+    margin-bottom: 0px;
+}
+
 .iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
+    margin-bottom: 0;
 }
 
 .historia {

@@ -1,12 +1,60 @@
+article.miCuenta {
+    height: 400px;
+}
+
 .miCuenta {
-    height: 300px;
+    height: 400px;
     font-size: 3rem;
     margin: 40px;
     margin-bottom: 100px;
 }
 
 .botonIngresar {
-    margin: 20px;
-    margin-left: 120px;
-    padding: 1px;
+    background: linear-gradient(to bottom right, white, white);
+    border: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-left: 110px;
 }
+
+.botonIngresar:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+}
+
+.botonIngresar:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem white, 0.125rem 0.125rem 1rem white;
+}
+
+.herramientasLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.herramientasLoginLista {
+    list-style: none;
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+
+.herramientasLoginLista:hover {
+    transform: scale(1.2);
+}
+

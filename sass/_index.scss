@@ -27,7 +27,13 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    transition: all 0.5s;
 }
+
+.contactar:hover {
+    transform: scale(1.2);
+}
+
 
 .imagenperfil {
     height: 200px;
@@ -46,20 +52,25 @@
     height: 30px;
     width: 30px;
     margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.imgredes:hover {
+    transform: scale(1.2);
 }
 
 .divBotonVerMas {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 10px;
+    margin-top: 15px;
 }
 
 .botonVerMas {
-    background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+    background: linear-gradient(to bottom right, white, white);
     border: 0;
-    border-radius: 12px;
     color: black;
     cursor: pointer;
     display: inline-block;
@@ -85,4 +96,35 @@
 
 .botonVerMas:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #ced8e0, .125rem .125rem 1rem #ced8e0;
+}
+
+@media screen and (max-width: 1007px) {
+    .botonVerMas {
+        background: linear-gradient(to bottom right, #ced8e0, #ced8e0);
+        border: 0;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+    }
+
+    .botonVerMas:not([disabled]):focus {
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+    }
+
+    .botonVerMas:not([disabled]):hover {
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem #ced8e0, 0.125rem 0.125rem 1rem #ced8e0;
+    }
 }
